@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecNexus - Luxury Hotel Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/Sanaa copy.svg" alt="TecNexus Logo">
+        </div>
+        <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="book-now-btn">Book Now</button>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <p class="subtitle">Welcome to SANNA Hotel</p>
+            <h1>Experience <span>Luxury</span> Like Never Before</h1>
+            <p class="hero-description">Where modern technology meets timeless hospitality</p>
+            <a href="#rooms" class="cta-button">Explore Rooms</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="booking-form" data-aos="fade-up">
+        <form id="booking-form">
+            <div class="form-group">
+                <label><i class="fas fa-calendar-alt"></i></label>
+                <input type="date" id="check-in" required>
+            </div>
+            
+            <div class="form-group">
+                <label><i class="fas fa-user-friends"></i></label>
+                <select id="guests" required>
+                    <option value="">Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-bed"></i></label>
+                <select id="room-type" required>
+                    <option value="">Room Type</option>
+                    <option value="standard">Standard</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-text" data-aos="fade-right">
+            <h2>About SANNA Hotel</h2>
+            <p class="highlight">Where Technology Meets Comfort</p>
+            <p>Experience the perfect blend of cutting-edge technology and luxurious comfort in our carefully designed spaces. Each room is equipped with smart controls, high-speed connectivity, and modern amenities to ensure a memorable stay.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-wifi"></i>
+                    <span>High-Speed WiFi</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>24/7 Service</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-spa"></i>
+                    <span>Luxury Spa</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-image" data-aos="fade-left">
+            <img src="images/about.jpg" alt="Luxury Interior">
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+        <h2 data-aos="fade-up">Luxury Accommodations</h2>
+        <div class="room-cards">
+            <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="room-image">
+                    <img src="images/room1.jpg" alt="Luxury Suite">
+                    <div class="room-price">
+                        <span>From</span>
+                        <h3>$299</h3>
+                        <span>per night</span>
+                    </div>
+                </div>
+                <div class="room-info">
+                    <h3>Luxury Suite</h3>
+                    <div class="room-features">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-tv"></i> Smart TV</span>
+                        <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+                        <span><i class="fas fa-bath"></i> Luxury Bath</span>
+                    </div>
+                    <p>Experience ultimate luxury in our spacious suite with panoramic views.</p>
+                    <button class="book-room">Book Now</button>
+                </div>
+            </div>
+            <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="room-image">
+                    <img src="images/room2.jpg" alt="Deluxe Room">
+                    <div class="room-price">
+                        <span>From</span>
+                        <h3>$199</h3>
+                        <span>per night</span>
+                    </div>
+                </div>
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <div class="room-features">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-tv"></i> Smart TV</span>
+                        <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+                        <span><i class="fas fa-bath"></i> Luxury Bath</span>
+                    </div>
+                    <p>Experience comfort and style in our deluxe room with modern amenities.</p>
+                    <button class="book-room">Book Now</button>
+                </div>
+            </div>
+            <div class="room-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="room-image">
+                    <img src="images/room3.jpg" alt="Standard Room">
+                    <div class="room-price">
+                        <span>From</span>
+                        <h3>$149</h3>
+                        <span>per night</span>
+                    </div>
+                </div>
+                <div class="room-info">
+                    <h3>Standard Room</h3>
+                    <div class="room-features">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-tv"></i> Smart TV</span>
+                        <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+                        <span><i class="fas fa-bath"></i> Luxury Bath</span>
+                    </div>
+                    <p>Experience a cozy stay in our standard room with modern amenities.</p>
+                    <button class="book-room">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <h2 data-aos="fade-up">Hotel Amenities</h2>
+        <div class="amenities-grid">
+            <div class="amenity-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-swimming-pool"></i>
+                <h3>Infinity Pool</h3>
+                <p>Relax in our rooftop infinity pool with city views</p>
+            </div>
+            <div class="amenity-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-utensils"></i>
+                <h3>Fine Dining</h3>
+                <p>Experience culinary excellence at our restaurants</p>
+            </div>
+            <div class="amenity-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-spa"></i>
+                <h3>Luxury Spa</h3>
+                <p>Rejuvenate your body and mind</p>
+            </div>
+            <div class="amenity-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Fitness Center</h3>
+                <p>State-of-the-art equipment and trainers</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content" data-aos="fade-up">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Sanaa, City Center</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+967 770116297</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@sanaa.com</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/Sanaa copy2.svg" alt="TecNexus Logo" class="footer-logo">
+                <p>Experience luxury and technology in perfect harmony.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sanaa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
